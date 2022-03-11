@@ -6,7 +6,7 @@ function App() {
   function sendEmail(e) {
     e.preventDefault();
 
-emailjs.sendForm('gmail', 'template_k1imgbo', e.target,'xh_KH5LykLTzz_PqW')
+emailjs.sendForm('gmail', 'template id', e.target,'api key (user)')
     .then((result) => {
         console.log(result.text);
     }, (error) => {
